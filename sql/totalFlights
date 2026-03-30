@@ -1,0 +1,9 @@
+SELECT
+    TOP 10 [Loyalty Number],
+    SUM([Total Flights]) AS Total_Flights
+FROM
+    [Customer Flight Activity]
+GROUP BY
+    [Loyalty Number]
+ORDER BY
+    SUM([Total Flights]) DESC;
