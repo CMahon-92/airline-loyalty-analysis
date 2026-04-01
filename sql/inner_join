@@ -1,0 +1,9 @@
+SELECT
+    [Customer Loyalty History].[Loyalty Number],
+    [Customer Loyalty History].Province,
+    [Customer Loyalty History].Gender,
+    [Customer Loyalty History].Education,
+    [Customer Flight Activity].[Total Flights]
+FROM
+    [Customer Loyalty History]
+    INNER JOIN [Customer Flight Activity] ON [Customer Loyalty History].[Loyalty Number] = [Customer Flight Activity].[Loyalty Number];
