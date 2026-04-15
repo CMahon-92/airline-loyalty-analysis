@@ -1,0 +1,7 @@
+SELECT
+    Province,
+    Count(*) AS Province_Count
+FROM
+    [Customer Loyalty History]
+GROUP BY
+    Province;
