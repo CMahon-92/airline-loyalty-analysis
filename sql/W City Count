@@ -1,0 +1,9 @@
+SELECT
+    city,
+    count(*) AS City_Count
+FROM
+    [Customer Loyalty History]
+WHERE
+    city LIKE 'W*'
+GROUP BY
+    city;
