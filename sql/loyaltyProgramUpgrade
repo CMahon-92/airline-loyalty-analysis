@@ -1,0 +1,13 @@
+SELECT
+    City,
+    Count(City) AS Total_Population_Count
+FROM
+    [Customer Loyalty History]
+WHERE
+    [Marital Status] = "Single"
+    AND Education = "Bachelor"
+    AND [Loyalty Card] = "Nova"
+GROUP BY
+    City
+ORDER BY
+    Count(City) DESC
