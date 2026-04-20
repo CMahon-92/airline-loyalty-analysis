@@ -1,0 +1,7 @@
+SELECT
+    [Cancellation Month] & "/" & [Cancellation Year] AS Membership_Cancellation
+FROM
+    [Customer Loyalty History]
+WHERE
+    [Cancellation Month]
+    AND [Cancellation Year] IS NOT NULL;
